@@ -2,6 +2,7 @@
 
 ![SeAI Banner](https://img.shields.io/badge/SeAI-v1.0.0-blue) ![License](https://img.shields.io/badge/license-MIT-green) ![Python](https://img.shields.io/badge/python-3.8+-blue) ![React](https://img.shields.io/badge/react-18.2+-blue)
 
+<img src="https://github.com/Future707/Inventory/blob/main/Images/SeAl.gif" width="128" height="128">
 ![SeAl](https://github.com/Future707/Inventory/blob/main/Images/SeAl.gif)
 
 ## Overview
