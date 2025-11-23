@@ -2,6 +2,8 @@
 
 ![SeAI Banner](https://img.shields.io/badge/SeAI-v1.0.0-blue) ![License](https://img.shields.io/badge/license-MIT-green) ![Python](https://img.shields.io/badge/python-3.8+-blue) ![React](https://img.shields.io/badge/react-18.2+-blue)
 
+![SeAl](https://github.com/Future707/Inventory/blob/main/Images/SeAl.gif)
+
 ## Overview
 
 **SeAI (Seal AI)** is a secure web-based application that allows users to embed encrypted "SeAl" tags in images to verify that they are AI-generated. The application uses advanced cryptography (AES-256) and steganography techniques to hide authentication tags within image pixels without altering their visual appearance.
