@@ -60,3 +60,8 @@ htmlcov/
 .cache/
 *.bak
 *.tmp
+
+# Large media files (optional - uncomment if you want to exclude from git)
+# frontend/public/gifs/*.gif
+# frontend/public/images/*.png
+# frontend/public/images/*.jpg

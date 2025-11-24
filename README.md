@@ -1,8 +1,40 @@
 # SeAI - AI Image Seal Verification System
 
+<p align="center">
+  <img src="https://github.com/Future707/Inventory/blob/main/Images/SeAl.gif" width="128" height="128">
+</p>
+
 ![SeAI Banner](https://img.shields.io/badge/SeAI-v1.0.0-blue) ![License](https://img.shields.io/badge/license-MIT-green) ![Python](https://img.shields.io/badge/python-3.8+-blue) ![React](https://img.shields.io/badge/react-18.2+-blue)
 
-<img src="https://github.com/Future707/Inventory/blob/main/Images/SeAl.gif" width="128" height="128">
+## Screenshots
+
+<table>
+  <tr>
+    <td align="center">
+      <img src="https://github.com/Future707/Inventory/blob/main/Images/seal.png" alt="Embed SeAl Tag" width="400">
+      <br>
+      <b>🔐 Embed SeAl Tag</b>
+      <br>
+      <sub>Upload and encrypt your images with invisible AI verification tags</sub>
+    </td>
+    <td align="center">
+      <img src="https://github.com/Future707/Inventory/blob/main/Images/checkseal.png" alt="Verify SeAl Tag" width="400">
+      <br>
+      <b>✓ Verify SeAl Tag</b>
+      <br>
+      <sub>Check if images contain authentic AI-generated verification tags</sub>
+    </td>
+  </tr>
+  <tr>
+    <td align="center" colspan="2">
+      <img src="https://github.com/Future707/Inventory/blob/main/Images/moreinfo.png" alt="Information Panel" width="400">
+      <br>
+      <b>📚 Information Panel</b>
+      <br>
+      <sub>Learn about encryption methods, security features, and technical specifications</sub>
+    </td>
+  </tr>
+</table>
 
 ## Overview
 

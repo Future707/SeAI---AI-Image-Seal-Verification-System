@@ -3,7 +3,7 @@ import React from 'react';
 const InfoPanel = () => {
   return (
     <div className="info-container">
-      <div className="info-section">
+      <div className="info-card">
         <h2>About SeAI</h2>
         <p>
           SeAI (Seal AI) is a secure image verification system that allows you to embed
@@ -13,49 +13,57 @@ const InfoPanel = () => {
         </p>
       </div>
 
-      <div className="info-section">
+      <div className="info-card">
         <h2>How It Works</h2>
-        <p><strong>Embedding Process:</strong></p>
-        <ul>
-          <li>Upload your image through the web interface</li>
-          <li>SeAI generates a unique "SeAl" tag with metadata</li>
-          <li>The tag is encrypted using AES-256-GCM encryption</li>
-          <li>The encrypted tag is hidden in the image using LSB steganography</li>
-          <li>Download the sealed image (visually identical to the original)</li>
-        </ul>
+        <div className="process-section">
+          <h3>🔒 Embedding Process</h3>
+          <ul>
+            <li>Upload your image through the web interface</li>
+            <li>SeAI generates a unique "SeAl" tag with metadata</li>
+            <li>The tag is encrypted using AES-256-GCM encryption</li>
+            <li>The encrypted tag is hidden in the image using LSB steganography</li>
+            <li>Download the sealed image (visually identical to the original)</li>
+          </ul>
+        </div>
 
-        <p><strong>Verification Process:</strong></p>
-        <ul>
-          <li>Upload an image to verify</li>
-          <li>SeAI extracts the hidden encrypted tag from the image</li>
-          <li>The tag is decrypted and verified</li>
-          <li>Results confirm whether the image is AI-generated</li>
-        </ul>
+        <div className="process-section">
+          <h3>✓ Verification Process</h3>
+          <ul>
+            <li>Upload an image to verify</li>
+            <li>SeAI extracts the hidden encrypted tag from the image</li>
+            <li>The tag is decrypted and verified</li>
+            <li>Results confirm whether the image is AI-generated</li>
+          </ul>
+        </div>
       </div>
 
-      <div className="info-section">
+      <div className="info-card">
         <h2>Security Features</h2>
         <div className="feature-grid">
           <div className="feature-card">
+            <div className="feature-icon">🔐</div>
             <h3>AES-256 Encryption</h3>
             <p>Military-grade encryption using Galois/Counter Mode with authentication</p>
           </div>
           <div className="feature-card">
+            <div className="feature-icon">🎭</div>
             <h3>LSB Steganography</h3>
             <p>Invisible embedding using Least Significant Bit pixel manipulation</p>
           </div>
           <div className="feature-card">
+            <div className="feature-icon">🛡️</div>
             <h3>Tamper Detection</h3>
             <p>Authenticated encryption prevents undetected modifications</p>
           </div>
           <div className="feature-card">
+            <div className="feature-icon">🔑</div>
             <h3>Key Derivation</h3>
             <p>PBKDF2 with 100,000 iterations for secure key generation</p>
           </div>
         </div>
       </div>
 
-      <div className="info-section">
+      <div className="info-card">
         <h2>Technical Specifications</h2>
         <ul>
           <li><strong>Encryption Algorithm:</strong> AES-256-GCM (Advanced Encryption Standard)</li>
@@ -67,7 +75,7 @@ const InfoPanel = () => {
         </ul>
       </div>
 
-      <div className="info-section">
+      <div className="info-card">
         <h2>Use Cases</h2>
         <ul>
           <li><strong>AI Content Verification:</strong> Prove that images are AI-generated</li>
@@ -78,7 +86,7 @@ const InfoPanel = () => {
         </ul>
       </div>
 
-      <div className="info-section">
+      <div className="info-card">
         <h2>Important Notes</h2>
         <ul>
           <li>The SeAl tag is invisible and does not alter the visual appearance of images</li>
@@ -89,10 +97,8 @@ const InfoPanel = () => {
         </ul>
       </div>
 
-      <div className="info-section" style={{ textAlign: 'center', marginTop: '2rem' }}>
-        <p style={{ color: '#999', fontSize: '0.9rem' }}>
-          SeAI v1.0.0 | Built with Flask, React, and cutting-edge cryptography
-        </p>
+      <div className="info-footer">
+        <p>SeAI v1.0.0 | Built with Flask, React, and cutting-edge cryptography</p>
       </div>
     </div>
   );

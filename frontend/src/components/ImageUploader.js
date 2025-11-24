@@ -7,6 +7,7 @@ const ImageUploader = () => {
   const [loading, setLoading] = useState(false);
   const [result, setResult] = useState(null);
   const [dragOver, setDragOver] = useState(false);
+  const [showToast, setShowToast] = useState(false);
   const fileInputRef = useRef(null);
 
   const handleFileSelect = (event) => {
@@ -61,6 +62,11 @@ const ImageUploader = () => {
       return;
     }
 
+    // Show toast notification
+    setShowToast(true);
+    setTimeout(() => setShowToast(false), 4000);
+
+    // Start embedding process
     setLoading(true);
     setResult(null);
 
@@ -131,6 +137,18 @@ const ImageUploader = () => {
       <p style={{ color: '#666', textAlign: 'center', marginBottom: '2rem' }}>
         Upload an image to embed an encrypted AI-generated SeAl tag
       </p>
+
+      {showToast && (
+        <div className="toast-notification">
+          <div className="toast-icon">🔐</div>
+          <div className="toast-content">
+            <div className="toast-title">Encryption Applied</div>
+            <div className="toast-message">
+              Your image is being sealed with AES-256-GCM encryption and LSB steganography
+            </div>
+          </div>
+        </div>
+      )}
 
       {!selectedFile && !loading && !result && (
         <div
